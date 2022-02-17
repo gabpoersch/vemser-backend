@@ -38,7 +38,7 @@ public class exercise02 {
         }
 
         //Loop da quarta prova
-        System.out.println("Digite a nota da primeira prova: ");
+        System.out.println("Digite a nota da quarta prova: ");
         exam4 = scan.nextDouble();
         while (exam4 < 0 || exam4 > 10) {
             System.out.println("Nota inválida. Digite uma nota de 0 a 10: ");
