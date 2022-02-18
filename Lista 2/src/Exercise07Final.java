@@ -1,4 +1,4 @@
-public class Exercise07 {
+public class Exercise07Final {
     public static void main(String[] args) {
 
         int val = 0;
