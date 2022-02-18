@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class exercise03 {
+public class Exercise03 {
     public static void main(String[] args) {
         double cost = 0;
         double paid = 0;

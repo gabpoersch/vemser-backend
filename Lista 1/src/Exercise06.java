@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class exercise06 {
+public class Exercise06 {
     public static void main(String[] args) {
         String word = "";
 

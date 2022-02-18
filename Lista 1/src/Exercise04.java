@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class exercise04 {
+public class Exercise04 {
     public static void main(String[] args) {
         String state = "";
         String city = "";
