@@ -29,9 +29,9 @@ public class Exercise03Final {
                 String name = input;
                 System.out.println("Digite a altura:");
                 height = scan.nextDouble();
+                totalHeight += height;
                 if (height>tallest){
                     tallest = height;
-                    totalHeight += height;
                 }
                 scan.nextLine();
                 System.out.println("Digite a idade:");
