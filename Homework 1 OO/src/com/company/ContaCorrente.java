@@ -59,7 +59,7 @@ public class ContaCorrente {
     }
 
     public double retornarSaldoComChequeEspecial() {
-        System.out.println(saldo+chequeEspecial);
+        System.out.println("O valor total disponível (saldo + Cheque Especial) é de "+(saldo+chequeEspecial));
         return saldo+chequeEspecial;
     }
 

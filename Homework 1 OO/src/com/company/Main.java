@@ -52,6 +52,10 @@ public class Main {
         //SE QUISER USAR SÓ PRA CONFERIR A TRANSFERÊNCIA
 //        cc1.imprimirContaCorrente();
 
+        //SE FOR NECESSÁRIO INFORMAR AO CLIENTE
+//        cc1.retornarSaldoComChequeEspecial();
+//        cc2.retornarSaldoComChequeEspecial();
+
 
 
 
