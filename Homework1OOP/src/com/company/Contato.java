@@ -5,6 +5,8 @@ public class Contato {
     String descricao;
     String telefone;
 
+
+
     public Contato(String descricao, String telefone, int tipo) {
         this.tipo = tipo;
         this.descricao = descricao;

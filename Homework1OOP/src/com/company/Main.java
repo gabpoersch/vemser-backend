@@ -16,8 +16,8 @@ public class Main {
 
         //IMPRIMIR CONTA CORRENTE 1
 //        cc1.imprimirContaCorrente();
-//        System.out.println();
-//        cli1.imprimirCliente();
+//       System.out.println();
+//       cli1.imprimirCliente();
 
 
         //IMPRIMIR CONTA CORRENTE 2
@@ -28,12 +28,12 @@ public class Main {
         //SACAR VALOR DA CC1 (troque o valor pra testar)
 //        cc1.imprimirContaCorrente();
 //        System.out.println();
-//        cc1.sacar(470);
+//        cc1.sacar();
 
         //SACAR VALOR DA CC2 (troque o valor pra testar)
 //        cc2.imprimirContaCorrente();
 //        System.out.println();
-//        cc2.sacar(470);
+//        cc2.sacar(560);
 
         //DEPOSITAR VALOR CC1 (troque o valor pra testar)
 //        cc1.imprimirContaCorrente();
@@ -46,8 +46,8 @@ public class Main {
 //        cc2.depositar(200);
 
         //TRANSFERÊNCIA
-//        cc2.transferir(cc1, 200);
-//        System.out.println();
+        cc1.transferir(cc2, 400);
+        System.out.println();
 
         //SE QUISER USAR SÓ PRA CONFERIR A TRANSFERÊNCIA
 //        cc1.imprimirContaCorrente();
@@ -55,7 +55,6 @@ public class Main {
         //SE FOR NECESSÁRIO INFORMAR AO CLIENTE
 //        cc1.retornarSaldoComChequeEspecial();
 //        cc2.retornarSaldoComChequeEspecial();
-
 
 
 
