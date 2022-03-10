@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "5e169de0-f4ac-401b-a2e9-410eeb105472",
+		"name": "homework1_2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET PESSOA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://back-vemserdbc.herokuapp.com/pessoa",
+					"protocol": "https",
+					"host": [
+						"back-vemserdbc",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT PESSOA ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"idPessoa\": 5,\n        \"nome\": \"Gabriel Poersch\",\n        \"dataNascimento\": \"1996-09-23\",\n        \"cpf\": \"49465465467\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://back-vemserdbc.herokuapp.com/pessoa/5",
+					"protocol": "https",
+					"host": [
+						"back-vemserdbc",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pessoa",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE PESSOA ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://back-vemserdbc.herokuapp.com/pessoa/2",
+					"protocol": "https",
+					"host": [
+						"back-vemserdbc",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pessoa",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST PESSOA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"idPessoa\": 5,\n        \"nome\": \"Gabriel Poersch\",\n        \"dataNascimento\": \"1996-09-23\",\n        \"cpf\": \"12345678910\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://back-vemserdbc.herokuapp.com/pessoa/5",
+					"protocol": "https",
+					"host": [
+						"back-vemserdbc",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pessoa",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET CONTATO",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GET CONTATO ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "POST CONTATO ID",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"tipoContato\": \"COMERCIAL\",\n        \"numero\": \"051999508507\",\n        \"descricao\": \"whatsapp\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://back-vemserdbc.herokuapp.com/contato/5",
+					"protocol": "https",
+					"host": [
+						"back-vemserdbc",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"contato",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT CONTATO ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE CONTATO",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
