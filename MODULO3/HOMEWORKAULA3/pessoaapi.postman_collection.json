@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "3676c839-b7e8-40f9-ac69-f78f43b8f186",
+		"name": "pessoaapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ENDERECO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/endereco",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ENDERECO ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/endereco/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ENDERECO ID PESSOA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/endereco/2/pessoa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco",
+						"2",
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ENDERECO ID PESSOA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idEndereco\": 7,\n    \"idPessoa\": 7,\n    \"cep\": 99007,\n    \"numero\": 77\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/endereco/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ENDERECO ID ENDERECO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idEndereco\": 7,\n    \"idPessoa\": 7,\n    \"cep\": 99008,\n    \"numero\": 77\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/endereco/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ENDERECO ID ENDERECO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/endereco/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
