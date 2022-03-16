@@ -15,8 +15,10 @@ import java.util.stream.Collectors;
 
 @Service
 public class ContatoService {
+
     @Autowired
     private ContatoRepository contatoRepository;
+
     @Autowired
     private PessoaRepository pessoaRepository;
 
@@ -26,7 +28,7 @@ public class ContatoService {
     public ContatoDTO create(Integer idPessoa, ContatoCreateDTO contato) throws RegraDeNegocioException{
         contato.setIdPessoa(idPessoa);
         if(pessoaRepository.getByName(String.valueOf(contato.getIdPessoa()))==null){
-            throw new RegraDeNegocioException("Essa pessoa não existe");
+            throw new RegraDeNegocioException("Pessoa inexistente");
         }
         Contato contatoEntity = objectMapper.convertValue(contato, Contato.class);
         Contato contatoCriado = contatoRepository.create(contatoEntity);
@@ -42,7 +44,7 @@ public class ContatoService {
 
     public ContatoDTO update(Integer id, ContatoCreateDTO contatoAtualizar) throws Exception {
         if(pessoaRepository.getByName(String.valueOf(contatoAtualizar.getIdPessoa()))==null){
-            throw new RegraDeNegocioException("Essa pessoa não existe");
+            throw new RegraDeNegocioException("Pessoa inexistente");
         }
         Contato contatoEntity = objectMapper.convertValue(contatoAtualizar, Contato.class);
         Contato contatoAtualizado = contatoRepository.update(id, contatoEntity);

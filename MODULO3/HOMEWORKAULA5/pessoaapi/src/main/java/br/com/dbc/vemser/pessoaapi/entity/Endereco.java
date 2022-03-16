@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.*;
 
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @Data
 public class Endereco {

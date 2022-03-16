@@ -5,8 +5,8 @@ import lombok.*;
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
 @Builder
 public class Pessoa {

@@ -49,7 +49,7 @@ public class PessoaService {
         return objectMapper.convertValue(pessoa, PessoaDTO.class);
     }
 
-    public List<PessoaDTO> listByName(String nome) throws RegraDeNegocioException {
+    public List<PessoaDTO> getByName(String nome) throws RegraDeNegocioException {
         return pessoaRepository.getByName(nome)
                 .stream()
                 .map(pessoa -> objectMapper.convertValue(pessoa, PessoaDTO.class))

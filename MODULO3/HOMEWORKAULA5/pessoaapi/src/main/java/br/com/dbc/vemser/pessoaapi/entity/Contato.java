@@ -5,8 +5,8 @@ import lombok.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Builder
 @Data
 public class Contato {

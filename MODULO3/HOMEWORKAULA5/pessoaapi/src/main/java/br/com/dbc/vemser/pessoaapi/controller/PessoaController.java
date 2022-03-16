@@ -51,7 +51,7 @@ public class PessoaController {
 
     @GetMapping("/byname")
     public List<PessoaDTO> getByName(@RequestParam("nome") String nome) throws Exception{
-        return pessoaService.listByName(nome);
+        return pessoaService.getByName(nome);
     }
 
     @PutMapping("/{idPessoa}")
