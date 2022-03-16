@@ -1,4 +1,4 @@
-package com.dbc.pessoaapi.exception;
+package br.com.dbc.vemser.pessoaapi.exception;
 
 public class RegraDeNegocioException extends Exception{
 

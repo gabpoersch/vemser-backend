@@ -1,4 +1,4 @@
-package com.dbc.pessoaapi.exception;
+package br.com.dbc.vemser.pessoaapi.exception;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
