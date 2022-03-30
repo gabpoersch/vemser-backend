@@ -34,17 +34,20 @@ public class Exercise1 {
         LocalDate tod = today.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 
 
-        if (today.equals(nextAnniversary)) {
-            System.out.println("Hoje é seu aniversário!");
+        if (formattedBirthday.getYear() > formattedToday.getYear()) {
+            System.out.println("Você precisa ter nascido em "+tod.getYear()+" ou antes.");
         }
-        else if (today.before(nextAnniversary)) {
-            Period period = Period.between(tod, nextAnni);
-            System.out.println("Faltam " + period.getMonths() + " meses e " + period.getDays() + " dias para o seu aniversário.");
-        }
-        else if (today.after(nextAnniversary)) {
-            LocalDate nextYear = nextAnni.withYear(nextAnni.getYear()+1);
-            Period period = Period.between(tod, nextYear);
-            System.out.println("Faltam "+period.getMonths()+" meses e "+period.getDays()+" dias para o seu aniversário.");
+        else {
+            if (today.equals(nextAnniversary)) {
+                System.out.println("Hoje é seu aniversário!");
+            } else if (today.before(nextAnniversary)) {
+                Period period = Period.between(tod, nextAnni);
+                System.out.println("Faltam " + period.getMonths() + " meses e " + period.getDays() + " dias para o seu aniversário.");
+            } else if (today.after(nextAnniversary)) {
+                LocalDate nextYear = nextAnni.withYear(nextAnni.getYear() + 1);
+                Period period = Period.between(tod, nextYear);
+                System.out.println("Faltam " + period.getMonths() + " meses e " + period.getDays() + " dias para o seu aniversário.");
+            }
         }
     }
 }

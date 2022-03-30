@@ -9,5 +9,8 @@ public class Exercise4 {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
         System.out.println(now.format(formatter));
+        System.out.println(now.getDayOfWeek());
+        System.out.println(now.getDayOfYear());
+
     }
 }
