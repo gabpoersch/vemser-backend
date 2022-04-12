@@ -56,7 +56,7 @@ public class VakinhaMongoJava {
                     .append("status_request", false);
 
             Document newRequest3 = new Document("id_request", 3)
-                    .append("id_user", 3)
+                    .append("id_user", 2)
                     .append("title", "Vakinha3")
                     .append("request_description", "Ajude os necessitados3")
                     .append("goal", 30000)
@@ -93,7 +93,7 @@ public class VakinhaMongoJava {
             //DELETES
             System.out.println("\nDELETES");
             requests.deleteMany(new Document());
-            users.deleteOne(Filters.eq("name", "liane"));
+            users.deleteOne(Filters.eq("name", "lianenova"));
         }
 }
 
