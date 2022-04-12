@@ -21,13 +21,13 @@ public class KafkaConsumerConfig {
     private static final String LATEST = "latest";
 
     @Value(value = "${kafka.bootstrap-servers}")
-    private String bootstrapAddress; //localhost:9092
+    private String bootstrapAddress;
 
     @Value("${kafka.client-id}")
-    private String clientId; //kafka-consumer-api
+    private String clientId;
 
     @Value("${kafka.topic}")
-    private String topic; //meu-primeiro-topico
+    private String topic;
 
     @Bean
     public ConcurrentKafkaListenerContainerFactory<String, String> listenerContainerFactory(){
