@@ -53,9 +53,9 @@ public class ProducerService {
 
     public void sendMessage(String message, List<Users> receiver) throws JsonProcessingException {
         MessageDTO messageDTO = MessageDTO.builder()
-                .user(clientId)
-                .message(message)
-                .date(LocalDateTime.now())
+                .usuario(clientId)
+                .mensagem(message)
+                .dataCriacao(LocalDateTime.now())
                 .build();
 
         String messageDTOasString = objectMapper.writeValueAsString(messageDTO);

@@ -29,7 +29,7 @@ public class ConsumerService {
             topicPartitions = {@TopicPartition(topic = "chat-marcar-churrasco", partitions = {"5"})})
     public void privateConsumer(@Payload String message) throws JsonProcessingException {
         MessageDTO messageDTO = objectMapper.readValue(message, MessageDTO.class);
-        System.out.println(messageDTO.getDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) +" ["+messageDTO.getUser()+"](private): "+messageDTO.getMessage());
+        System.out.println(messageDTO.getDataCriacao().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) +" ["+messageDTO.getUsuario()+"](private): "+messageDTO.getMensagem());
     }
 
     @KafkaListener(
@@ -40,6 +40,6 @@ public class ConsumerService {
     public void generalConsumer(@Payload String message) throws JsonProcessingException {
         MessageDTO messageDTO = objectMapper.readValue(message, MessageDTO.class);
 
-        System.out.println(messageDTO.getDate().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) +" ["+messageDTO.getUser()+"]: "+messageDTO.getMessage());
+        System.out.println(messageDTO.getDataCriacao().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) +" ["+messageDTO.getUsuario()+"]: "+messageDTO.getMensagem());
     }
 }
