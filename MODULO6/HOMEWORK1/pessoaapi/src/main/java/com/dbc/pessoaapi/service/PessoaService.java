@@ -31,7 +31,7 @@ public class PessoaService {
     @Autowired
     private EmailService emailService;
 
-    @Scheduled(cron = "0 0 10 * * *")
+    @Scheduled(cron = "0 0 8 * * *")
     public void personBirthdayEmail() {
         pessoaRepository.findByAniversariantes()
                 .forEach(aniversariante -> {
@@ -52,7 +52,7 @@ public class PessoaService {
         System.out.println("E-mail promocional enviado!");
     }
 
-    @Scheduled(cron = "0 0 10 * * *")
+    @Scheduled(cron = "0 0 8,20 * * *")
     public void noAddressEmail() {
         pessoaRepository.findByPessoaSemEndereco()
                 .forEach(pessoa -> {
